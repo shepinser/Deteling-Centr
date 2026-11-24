@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x86</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\БД\бд.accdb" Link="бд.accdb" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Update="Form1.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Form2.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Form4.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Form3.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Form5.cs"><SubType>Form</SubType></Compile>
+  </ItemGroup>
+
+</Project>
